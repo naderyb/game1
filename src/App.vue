@@ -1,4 +1,9 @@
 <template>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark px-4">
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="/nexus-logo.svg" alt="Nexus Club Logo" width="400" height="100" class="me-2" />
+  </a>
+</nav>
   <div class="app-container" :class="{ 'rtl': currentLanguage === 'ar' }">
     <header>
       <h1>{{ t('gameTitle') }}</h1>
@@ -109,6 +114,10 @@ body {
 .rtl {
   direction: rtl;
   text-align: right;
+}
+
+.me-2 {
+  margin: 1.5rem !important;
 }
 
 header {
